@@ -7,13 +7,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 import plotly.graph_objects as go
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+jobs = pd.read_csv(os.path.join(BASE_DIR, "data", "jobs_cleaned.csv"))
+model = joblib.load(os.path.join(BASE_DIR, "model", "suitability_model.pkl"))
 st.set_page_config(layout="wide", page_title="AI Resume Screening")
 
 # ---------- LOAD DATA ----------
-jobs = pd.read_csv(os.path.join(BASE_DIR, "data", "jobs_cleaned.csv"))
-model = joblib.load(os.path.join(BASE_DIR, "model", "suitability_model.pkl"))
 
 jobs['full_jd'] = (
     jobs['Job Title'] + " " +
