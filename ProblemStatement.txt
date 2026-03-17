@@ -1,0 +1,40 @@
+AI Resume Screening & Job Recommendation System
+ 
+1. Problem Statement
+In today’s hiring process, recruiters receive a large number of resumes for each job opening. Manually screening these resumes is time-consuming, inefficient, and prone to bias.
+Your task is to build a Machine Learning-based system that can:
+1.Automatically analyze resumes
+2.Match them with job descriptions
+3.Predict candidate suitability
+4.Recommend relevant job roles
+2. Objective
+Develop an intelligent system that:
+1.Extracts information from resumes
+2.Compares it with job descriptions
+3.Generates a matching score
+4.Provides recommendations and insights
+3. Inputs
+Your system should accept:
+1.Resume (PDF or Text format)
+2.Job Description (Text format)
+4. Expected Outputs
+The system must generate:
+1.Candidate Match Score (0–100%)
+2.Skill Match Percentage
+3.Missing Skills (Skill Gap Analysis)
+4.Recommendation (Selected / Not Selected OR Suitable Jobs)
+5. Tasks to Perform
+Task 1: Data Collection
+Task 2: Data Preprocessing
+Task 3: Feature Engineering
+Task 4: Similarity & Matching
+Task 5: Model Building
+Task 6: Evaluation
+Task 7: Deployment
+6. Tools & Technologies
+1.Python
+2.Pandas, NumPy
+3.NLP: NLTK / spaCy
+4.Scikit-learn
+5.Streamlit (for UI)
+ 
